@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "file-saver": "^2.0.5",
+    "firebase": "^9.17.2",
     "opencv.js": "^1.2.1",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.3",
@@ -22,6 +23,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "firebase-tools": "^11.24.1",
     "vite": "^4.1.0"
   }
 }
