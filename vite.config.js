@@ -2,6 +2,10 @@
 // import { defineConfig } from "vite";
 
 // export default defineConfig({
+//   plugins: [react()],
+//   define: {
+//     Module: {},
+//   },
 //   build: {
 //     lib: {
 //       entry: "src/main.jsx",
