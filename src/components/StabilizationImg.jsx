@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import cv from "opencv.js";
 import Tesseract from "tesseract.js";
 
-function StabilizationImg({ imageSrc }) {
+function StabilizationImg(props) {
   const canvasRef = useRef(null);
   const [fillteredPhoto, setFillteredPhoto] = useState();
   const [textResult, setTextResult] = useState();
@@ -63,11 +63,11 @@ function StabilizationImg({ imageSrc }) {
     };
 
     // Create a Blob object from the imageSrc URL
-    const blob = new Blob([imageSrc], { type: "image/png" });
+    const blob = new Blob([props.imageSrc], { type: "image/png" });
 
     // Read the Blob object as a data URL
     reader.readAsDataURL(blob);
-  }, [imageSrc]);
+  }, [props.imageSrc]);
 
   const handleConversion = async (imageUrl) => {
     if (imageUrl) {
